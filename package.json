@@ -1,0 +1,23 @@
+{
+  "name": "domain-checker",
+  "version": "1.0.0",
+  "description": "a domain checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src"
+  },
+  "author": "John Carlo Franco",
+  "license": "ISC",
+  "dependencies": {
+    "whoiser": "^1.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francojohnc/domain-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/francojohnc/domain-checker/issues"
+  },
+  "homepage": "https://github.com/francojohnc/domain-checker#readme"
+}
