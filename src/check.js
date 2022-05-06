@@ -15,7 +15,7 @@ function check(words, callback, index) {
             const delta = new Date().getTime() - time;
             const remain = delta * (words.length - current);
             const percent = current / words.length;
-            callback({...response, current, remain, percent, domain});
+            callback({...response, current, remain, percent});
             return check(words, callback, current);
         });
 }

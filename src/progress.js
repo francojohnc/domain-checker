@@ -1,9 +1,11 @@
 function progress(percent) {
-    const i = percent * 10;
-    const dots = ".".repeat(i);
-    const left = 10 - i;
-    const empty = " ".repeat(left);
-    return `[${dots}${empty}] ${(percent * 100).toFixed()}%`;
+    const length = 10
+    const fill = '.'
+    const total = percent * length;
+    const step = fill.repeat(total);
+    const empty = "-".repeat(length - total);
+    const bar = step + empty
+    return `[${bar}] ${(percent * 100).toFixed()}%`;
 }
 
 module.exports = progress;
